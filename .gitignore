@@ -1,0 +1,8 @@
+node_modules/
+package-lock.json
+.DS_Store
+<<<<<<< HEAD
+.DS_Store
+=======
+.idea
+>>>>>>> ac15d98472c71b18856f5d9d7225d1c2c2988069
