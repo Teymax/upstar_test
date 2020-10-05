@@ -1,7 +1,7 @@
 <template>
     <div class="plans-item">
         <div class="plans-item-content">
-            <v-chip v-if="custom" class="mt-4" color="#efb60f">
+            <v-chip v-if="custom" class="mt-4" color="#efb60f" text-color="white">
                 Custom
             </v-chip>
             <v-chip v-if="updatedPlan && !custom" class="mt-4" color="#efb60f" text-color="white">

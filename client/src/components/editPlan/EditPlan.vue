@@ -16,9 +16,9 @@
                 </v-row>
                 <v-row>
                     <v-col xs="12" sm="5"
-                        ><span class="plan-title">Single</span
+                        ><span class="plan-title">{{ tmpCurrentPlan.name }}</span
                         ><span class="font__price"
-                            ><sub>$</sub>69.00</span
+                            ><sub>$</sub>{{ tmpCurrentPlan.cost }}</span
                         ></v-col
                     >
                     <v-col xs="12" sm="6">
@@ -29,7 +29,7 @@
                                 ></v-col
                             >
                             <v-col sm="5"
-                                ><a href="#" class="yellow-link"
+                                ><a href="#" @click="$emit('back')" class="yellow-link"
                                     >Change plan</a
                                 ></v-col
                             >
