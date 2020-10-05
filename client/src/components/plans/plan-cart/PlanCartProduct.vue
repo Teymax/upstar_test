@@ -190,7 +190,6 @@ export default {
   }),
   created() {
     const item = this.plansData.find(item => item.id === this.selectedPlanId);
-    console.log(item);
     this.tmpCurrentPlan = JSON.parse(JSON.stringify(item));
   },
   methods: {

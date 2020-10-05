@@ -360,7 +360,6 @@ export default new Vuex.Store({
             state.plansData[index] = plan;
         },
         updateCard(state, payload) {
-            console.log(payload, 'payload');
             let index = state.plansData.findIndex(item => item.id === payload.id)
             state.plansData[index] = {
                 updated: true,
