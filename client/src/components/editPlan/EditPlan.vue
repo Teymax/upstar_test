@@ -292,12 +292,14 @@ export default {
     updateCardHandler() {
       this.tmpCurrentPlan.benefits = this.benefits.filter(item => item.checked);
       this.tmpCurrentPlan.cost = this.tmpCost;
+      this.tmpCurrentPlan.resubscribePeriod = this.resubscribePeriodValue;
       this.updateCard(this.tmpCurrentPlan);
       this.$emit('save-changes');
     },
     saveAsCustom() {
       this.tmpCurrentPlan.benefits = this.benefits.filter(item => item.checked);
       this.tmpCurrentPlan.cost = this.tmpCost;
+      this.tmpCurrentPlan.resubscribePeriod = this.resubscribePeriodValue;
       this.tmpCurrentPlan.id += '1';
       this.saveCustomPlan(this.tmpCurrentPlan);
       this.$emit('save-changes');
